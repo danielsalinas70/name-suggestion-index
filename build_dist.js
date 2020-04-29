@@ -14,6 +14,7 @@ let brands = fileTree.read('brands');
 let out = {};
 
 buildAll();
+var =0;
 
 
 function buildAll() {
@@ -147,20 +148,6 @@ function buildXML() {
 }
 
 
-function buildTaginfo() {
-  let taginfo = {
-    'data_format': 1,
-    'data_url': 'https://raw.githubusercontent.com/osmlab/name-suggestion-index/master/dist/taginfo.json',
-    'project': {
-      'name': 'name-suggestion-index',
-      'description': 'Canonical common brand names for OpenStreetMap',
-      'project_url': 'https://github.com/osmlab/name-suggestion-index',
-      'doc_url': 'https://github.com/osmlab/name-suggestion-index/blob/master/README.md',
-      'icon_url': 'https://raw.githubusercontent.com/mapbox/maki/master/icons/fast-food-15.svg?sanitize=true',
-      'contact_name': 'Bryan Housel',
-      'contact_email': 'bhousel@gmail.com'
-    }
-  };
 
   let items = {};
   for (let key in out) {
